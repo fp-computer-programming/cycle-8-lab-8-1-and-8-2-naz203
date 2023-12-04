@@ -22,3 +22,33 @@ The function should use a for loop and print each invitation after it is generat
 
 
 """
+# nazeer thompson
+def calculate_sum():
+    user_input = int(input("Enter an integer: "))  # Prompt user to input an integer
+    total_sum = 0
+
+
+    # Using a for loop and range function to find the sum
+    for num in range(1, user_input + 1):
+        total_sum += num
+
+
+    return total_sum
+
+
+result = calculate_sum()  # Call the function and store the output
+print(result)  # Print the final sum
+
+8-2
+def generate_invitations(names):
+    for name in names:
+        invitation = f"Hi {name}, You're invited to my party on Friday!"
+        print(invitation)
+
+
+# Example list of names
+guest_list = ["Alice", "Bob", "Charlie"]
+
+
+# Call the function with the example list
+generate_invitations(guest_list)
